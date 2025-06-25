@@ -1,0 +1,384 @@
+*{
+    margin:0;
+    padding:0;
+}
+html, body {
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+}
+#navbar{
+    height:4.375rem;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: inline-flex;
+}
+i{
+    color:whitesmoke;
+}
+
+.spotify_icon{
+    height:70px;
+    width:80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.first_div{  
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    height:70px;
+    align-items: center;
+}
+.home{
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:50%;
+    background-color:rgb(67, 65, 65);
+    width:55px;
+}
+.home i{
+    color:rgb(242, 239, 239);
+}
+.home:hover{
+    transform: scale(1.03);
+    background-color: rgb(75, 74, 74);
+}
+.home i :hover{
+    color:white
+}
+.second{
+    background-color:rgb(70, 66, 66);
+    height:50px;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+}
+.search{
+    height: 70px;
+    width: 50px; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    
+}
+.square{
+    width: 50px;
+    height:70px;
+   display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.search_bar{
+    height: 40px;
+    width: 370px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    
+}
+input[type="text"] {
+    width:300px;
+    font-size: 20px;
+    border: none;
+}
+.second_div{
+    padding: 10px;
+}
+.third_div{
+    height: 70px;
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.explore{
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    width:150px;
+    height: 30px;
+    font-size: 16;
+    font-weight:bold;
+}
+.explore:hover{
+    transform:scale(1.03);
+}
+.install{
+    width: 150px;
+    height:30px;
+    display: flex;
+    justify-content:center;
+     
+}
+.install:hover{
+    transform: scale(1.03);
+}
+.friend{
+    width: 150px;
+    height:30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.big{
+    background-color:black;
+    height:95rem;
+    width:100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+.left{
+    background-color:rgb(42, 41, 41);
+    height:100vh;
+    width: 23%;
+    padding:1%; 
+    border-radius: 10px; 
+}
+.panel_1{
+    background-color: rgb(42, 41, 41);;
+    height:40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+#create_button{ 
+    height:36px;
+    width:85px;
+    background-color:rgb(93, 88, 88);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#create_button:hover{
+    background-color:rgb(105, 102, 102) ;
+}
+.panel_2{
+    background-color:rgb(93, 88, 88);
+    height: 100px;
+    width:85%;
+    padding:6%;
+}
+#panel_button{
+    background-color:white; 
+    color: black;
+     border-radius:50px; 
+     height:30px; 
+     width:140px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+#panel_button:hover{
+    transform: scale(1.03);
+}
+.resizer{
+    width:7px;
+    cursor: col-resize;
+    background-color: black;
+}
+.right{
+    background-color:rgb(42, 41, 41);
+    height:100vh;
+    overflow-y: auto;
+    border-radius:10px;
+    flex:1;
+}
+.bar{
+    height:8%;
+    width:100%;
+    top:0 ;
+    background-color:rgb(21, 21, 21);
+    position:sticky;
+    overflow: hidden;
+}
+.buttons{
+    background-color:pink;
+    height:65%;
+    width:18%;
+    display: flex;
+    justify-content:space-between;
+    margin-left:3%;
+    padding:10px;
+    gap:10px;
+}
+.button{
+    background-color:blueviolet;
+    color:white;
+    border-radius:20px;
+    padding:10px;
+    opacity:1;
+}
+.div1{
+    background-color:rgb(42, 41, 41);
+    height:8%;
+    width:94%;
+    margin-left:3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+#headings:hover{
+    text-decoration: underline ;
+    color: white;
+}
+.div2 {
+  background-color:rgb(42, 41, 41);
+  height:20rem;
+  overflow-x: auto;
+  color: aliceblue;
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+  white-space: nowrap;
+  margin-left:3%;
+  overflow-y: hidden;
+  scrollbar-width: none;
+}
+
+.div2 .card {
+  flex: 0 0 auto;
+  width: 180px;
+  height:235px;
+  background-color:rgb(42, 41, 41);
+  text-align: center;
+ 
+  border-radius: 10px;
+  padding:10px;
+  
+}
+.div2 .card:hover{
+    background-color:rgb(60, 57, 57);
+}
+.card-image {
+  width:100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.card-text{
+    background-color: palevioletred;
+    color: beige;
+    margin-top: 10px;
+}
+.card-cir-img{
+    height: 170px;
+    width: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+    
+}
+/* footer{
+    background-color:green;
+    width: auto;
+} */
+.super_big{
+display: flex;
+height:35rem;
+width:100%;
+background-color:rgb(42, 41, 41);
+flex-wrap: wrap;
+
+}
+.big-con{
+height:48%;
+width:100%;
+background-color:rgb(42, 41, 41);
+margin-top:4%;
+align-items:end;
+padding-left:3%;
+display: flex;
+justify-content: space-around;
+gap: 10px;
+flex-wrap: wrap;
+overflow: auto;
+border:2px solid rgb(63, 62, 62);
+border-left: 0px;
+border-right: 0px;
+
+}
+.part{
+
+    height:75%;
+    width:15%;
+    background-color:rgb(42, 41, 41);
+
+
+}
+.icon{
+    display: flex;
+    justify-content: space-between;
+    background-color: yellow;
+    width:180px;;
+}
+.part ul li{
+    margin-bottom: 10px;
+    list-style: none;
+    font-family:monospace;
+    color:rgb(208, 203, 203);
+    font-size: 14px;
+}
+.part ul li:hover{
+    text-decoration: underline;
+    color: white;
+}
+#insta{
+    height: 50px;
+    width:50px;
+    background-color: rgb(75, 73, 73);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    font-style: bold;
+    font-family:monospace ;
+    margin-bottom:10px;
+    color: white;
+    font-size:18px;
+}
+h4{
+    color: white;
+}
+.icon-part{
+    display: flex;
+    justify-content: right;
+    height:75%;
+    width:25%;
+    background-color: pink;
+}
+hr{
+    border: none;
+    height:1px;
+    background-color:white ;
+    margin: 20px 0;
+}
+.foot{
+    height: 5%;
+    width:100%;
+    display: flex;
+    justify-content: flex-start;
+    background-color:rgb(42, 41, 41);
+    margin-bottom:15%;
+    gap: 10px;
+    margin-left: 3%;
+}
+#spans{
+    color:rgb(208, 203, 203) ;
+}
+#spans:hover{
+    color: white;
+}
+span{
+    color: white;
+}
